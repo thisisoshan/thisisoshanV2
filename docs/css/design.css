@@ -7,7 +7,8 @@ body {
 	background: rgb(150, 140, 190);
 	margin: 0;
 	padding: 0;
-	text-align: left;
+	text-align: center;
+	overflow: hidden;
 	font-family: 'Raleway', cursive;
 }
 section {
@@ -127,5 +128,86 @@ a:hover, a:active, a:focus {
 	}
 	h6 {
 		font-size: 3rem;
+	}
+}
+.loader {
+	transition: all 1.5s ease;
+}
+.circle1 {
+	transition: all 3.5s ease;
+}
+.loader {
+	width: 420px;
+	height: 420px;
+	background: rgba(25,25,25,0.25);
+	position: absolute;
+	top: -210px;
+	left: -210px;
+	transform: rotate(-45deg);
+	z-index: 1;
+}
+.circle1 {
+	width: 150px;
+	height: 150px;
+	background: rgba(20,20,20,0.40);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border-radius: 50%;
+	z-index: 2;
+	overflow: hidden;
+	animation: rotated 2.0s linear infinite;
+}
+.circle2, .circle3, .circle4, .circle5, .circle6 {
+	width: 150px;
+	height: 150px;
+	background: rgba(180, 180, 180, 0.75);
+	border-radius: 50%;
+	animation-name: scaled;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.circle3, .circle4, .circle5, .circle6 {
+	position: absolute;
+}
+.circle3 {
+	top: -75px;
+}
+.circle4 {
+	right: -75px;
+	top: 0;
+}
+.circle5 {
+	bottom: -75px;
+}
+.circle6 {
+	left: -75px;
+	top: 0;
+}
+.load-complete {
+	top: -430px;
+	left: -430px;
+}
+@keyframes scaled {
+	0% {
+		transform: scale(0.0);
+		opacity: 0.0;
+	}
+	80% {
+		transform: scale(1.0);
+		opacity: 1.0;
+	}
+	100% {
+		transform: scale(0.0);
+		opacity: 0.0;
+	}
+}
+@keyframes rotated {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
