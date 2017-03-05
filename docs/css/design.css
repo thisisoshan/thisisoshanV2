@@ -24,6 +24,7 @@ section {
 	-o-user-select: none;
 	user-select: none;
 	cursor: default;
+	transition: all 1.0s ease-out;
 }
 p {
 	position: absolute;
