@@ -80,6 +80,14 @@ h4 {
 h5 {
 	font-size: 2.5rem;
 }
+@media screen and (max-width: 386px){
+	#col-lg-6 {
+		height: auto;
+	}
+	h5 {
+		padding-bottom: 4rem;
+	}
+}
 h6 {
 	font-size: 2rem;
 }
