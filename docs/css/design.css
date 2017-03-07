@@ -27,7 +27,7 @@ section {
 	cursor: default;
 	transition: all 1.0s ease-out;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 386px){
 	body {
 		background: rgb(150, 140, 190);
 		overflow: scroll;
