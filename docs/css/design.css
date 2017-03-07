@@ -4,6 +4,7 @@ html, body {
 	height: 100%;
 }
 body {
+	height: 100%;
 	background: rgb(150, 140, 190) url(../img/background.jpg) no-repeat no-repeat top left;
 	background-size: cover;
 	background-attachment: fixed;
@@ -28,7 +29,7 @@ section {
 }
 @media screen and (max-width: 800px){
 	body {
-		background-size: cover;
+		background: rgb(150, 140, 190);
 		overflow: scroll;
 	}/*
 	section {
