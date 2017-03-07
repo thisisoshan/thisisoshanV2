@@ -30,9 +30,9 @@ section {
 	body {
 		overflow: scroll;
 	}
-	section {
+	section {/*
 		background: rgb(150, 140, 190) url(../img/background.jpg) no-repeat no-repeat top left;
-		background-size: cover;
+		background-size: cover;*/
 	}
 }
 p {
