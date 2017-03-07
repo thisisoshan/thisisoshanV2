@@ -28,7 +28,7 @@ section {
 }
 @media screen and (max-width: 800px){
 	body {
-		background-size: contain;
+		background-size: initial;
 		overflow: scroll;
 	}/*
 	section {
