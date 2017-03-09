@@ -96,7 +96,7 @@ h4 {
 h5 {
 	font-size: 2.5rem;
 }
-@media screen and (max-width: 386px){
+@media screen and (max-width: 900px){
 	#col-lg-6 {
 		height: auto;
 	}
